@@ -1,0 +1,21 @@
+@font-face {
+    font-family: AcuminRegular;
+    src: url(fonts/AcuminPro-Regular.otf);
+}
+
+@font-face {
+    font-family: AcuminWideBold;
+    src: url(fonts/AcuminProWide-Bold.otf);
+}
+
+p {
+    font-family: AcuminWideBold;
+    font-size: 40px;
+}
+
+#hometext {
+    width: 70%;
+    height: auto;
+    font-family: AcuminRegular;
+    font-size: 40px;
+}
