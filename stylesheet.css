@@ -21,7 +21,7 @@ a {
 #italic {
     font-family: AcuminItalic;
     margin: 0;
-    padding: 0 6px 0 0;
+    padding: 0 7px 0 0;
     float: left;
 }
 
@@ -69,5 +69,22 @@ a {
 .box1 img {
     width: 30%;
     margin: 20;
+    border: solid black 1px;
+}
+
+.questions {
+    float: left;
+    width: 40%;
+    height: 100%;
+    overflow-y: scroll;
+    font-family: AcuminRegular;
+    font-size: 40px;
+}
+
+.form {
+    float: left;
+    margin-right: 40px;
+    width: 500px;
+    height: 100%;
     border: solid black 1px;
 }
