@@ -13,21 +13,55 @@
 
 <body>
 
-    <div class="slidecontainer">
-        <div class="mySlides">
-            <img src="images/4_1.png">
-            <img src="images/4_2.png">
-            <img src="images/4_3.png">
-            <img src="images/4_4.png">
-            <img src="images/4_5.png">
-            <img src="images/4_6.png">
-            <img src="images/4_7.png">
-            <img src="images/4_8.png">
-        </div>
+    <div id="slider">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="sp"><img src="images/4_1.png"></div>
+        <div class="sp"><img src="images/4_2.png"></div>
+        <div class="sp"><img src="images/4_3.png"></div>
+        <div class="sp"><img src="images/4_4.png"></div>
+        <div class="sp"><img src="images/4_5.png"></div>
+        <div class="sp"><img src="images/4_6.png"></div>
+        <div class="sp"><img src="images/4_7.png"></div>
+        <div class="sp"><img src="images/4_8.png"></div>
+    </div>
 
     </div>
 
     <script>
+        $(document).ready(function () {
+            $('.sp').first().addClass('active');
+            $('.sp').hide();
+            $('.active').show();
+
+            $('.right').click(function () {
+
+                $('.active').removeClass('active').addClass('oldActive');
+
+                if ($('.oldActive').is(':last-child')) {
+                    $('.sp').first().addClass('active');
+                } else {
+                    $('.oldActive').next().addClass('active');
+                }
+
+                $('.oldActive').removeClass('oldActive');
+                $('.sp').hide();
+                $('.active').show();
+
+            });
+
+            $('.left').click(function () {
+                $('.active').removeClass('active').addClass('oldActive');
+                if ($('.oldActive').is(':first-child')) {
+                    $('.sp').last().addClass('active');
+                } else {
+                    $('.oldActive').prev().addClass('active');
+                }
+                $('.oldActive').removeClass('oldActive');
+                $('.sp').hide();
+                $('.active').show();
+            });
+        });
     </script>
 
 </body>
