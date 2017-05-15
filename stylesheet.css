@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: AcuminItalic;
+    src: url(fonts/AcuminPro-Italic.otf);
+}
+
+@font-face {
     font-family: AcuminWideBold;
     src: url(fonts/AcuminProWide-Bold.otf);
 }
@@ -11,6 +16,13 @@
 a {
     color: green;
     text-decoration: none;
+}
+
+#italic {
+    font-family: AcuminItalic;
+    margin: 0;
+    padding: 0 6px 0 0;
+    float: left;
 }
 
 #hometext {
@@ -39,5 +51,23 @@ a {
 
 .hoverimages img {
     width: 150px;
+    border: solid black 1px;
+}
+
+.slidecontainer {
+    width: 400px;
+}
+
+.slidecontainer img {
+    width: 100%;
+}
+
+.box1 {
+    width: 60%;
+}
+
+.box1 img {
+    width: 30%;
+    margin: 20;
     border: solid black 1px;
 }
